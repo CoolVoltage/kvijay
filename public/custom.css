@@ -11,14 +11,21 @@ body {
 	color:white;
 	font-family:  ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 }
+
 #mePhoto{
 	-webkit-animation-duration: 1.5s;
 	-moz-animation-duration: 1.5s;
 	-o-animation-duration: 1.5s;
-	width:8%;
+	width:10%;
 	position:absolute;
 	margin-left:auto;
 	margin-right:auto;
 	left:0;
 	right:0;
+
+}
+@media (max-width:800px){
+#mePhoto{
+	width:30%;
+}
 }
