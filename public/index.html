@@ -5,8 +5,20 @@
 	<title>Karthik Vijay</title>
 	<link rel="stylesheet" type="text/css" href="custom.css">
 	<link rel="stylesheet" type="text/css" href="animate.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+$(function(){
+	$("#mePhoto").mouseover(function(){
+			$("#mePhoto").removeClass('animated flipOnY');
+			setTimeout(function(){
+					$("#mePhoto").addClass('animated flipOnY');
+			},100);	
+});	
+});
+</script>
 </head>
 <body>
-	<img class="animated flipInY" id="mePhoto" src="me.png"/>
+	<img class="animated flipOnY" id="mePhoto" src="me.png"/>
 </body>
+
 </html>
