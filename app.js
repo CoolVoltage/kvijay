@@ -9,4 +9,4 @@ var server = http.createServer(function(req,res){
 	serve(req,res,fileNotFound);
 });
 
-server.listen(80);
+server.listen(3000);
