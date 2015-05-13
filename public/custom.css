@@ -1,13 +1,49 @@
-html { 
+html{
 	width:100%;
-	height:100%;
+	height:100%;	
+}
+#pad { 
+	width:100%;
+	height:50%;
+	background: url("pad.jpg") no-repeat left top fixed; 
+    	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#liftoff { 
+	width:100%;
+	height:50%;
 	  background: url("background.jpg") no-repeat center center fixed; 
 	    -webkit-background-size: cover;
 	      -moz-background-size: cover;
 	        -o-background-size: cover;
 		  background-size: cover;
 }
+#losingEngines { 
+	width:100%;
+	height:50%;
+	  background: url("losingEngines.jpg") no-repeat center center fixed; 
+	    -webkit-background-size: cover;
+	      -moz-background-size: cover;
+	        -o-background-size: cover;
+		  background-size: cover;
+}
+#inOrbit { 
+	width:100%;
+	height:50%;
+	  background: url("inOrbit.jpg") no-repeat left top fixed; 
+	    -webkit-background-size: cover;
+	      -moz-background-size: cover;
+	        -o-background-size: cover;
+		  background-size: cover;
+}
 body {
+	height:200%;
+	width:100%;
+	padding:0;
+	margin:0;
 	color:white;
 	font-family:  ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 }
@@ -28,4 +64,5 @@ body {
 #mePhoto{
 	width:30%;
 }
+
 }
