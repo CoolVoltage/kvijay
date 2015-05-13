@@ -2,7 +2,11 @@ html{
 	width:100%;
 	height:100%;	
 }
+.segments {
+	
+}
 #pad { 
+	position:relative;
 	width:100%;
 	height:50%;
 	background: url("pad.jpg") no-repeat left top fixed; 
@@ -13,6 +17,7 @@ html{
 }
 
 #liftoff { 
+	position:relative;
 	width:100%;
 	height:50%;
 	  background: url("background.jpg") no-repeat center center fixed; 
@@ -22,6 +27,7 @@ html{
 		  background-size: cover;
 }
 #losingEngines { 
+	position:relative;
 	width:100%;
 	height:50%;
 	  background: url("losingEngines.jpg") no-repeat center center fixed; 
@@ -31,6 +37,7 @@ html{
 		  background-size: cover;
 }
 #inOrbit { 
+	position:relative;
 	width:100%;
 	height:50%;
 	  background: url("inOrbit.jpg") no-repeat left top fixed; 
@@ -45,13 +52,63 @@ body {
 	padding:0;
 	margin:0;
 	color:white;
-	font-family:  ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+//	font-family: ‘Courier New’, Courier, monospace;
+	letter-spacing:2px;
+	font-family:'Open Sans',Arial,Helvetica Neue,sans-serif;
+	font-size:20px;
 }
-
-#mePhoto{
+#padFooterImg{
+	position:absolute;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	left:0;
+	right:0;
+	bottom:20px;
+}
+#wildIntro{
+	position:absolute;
+	margin-left:auto;
+	margin-right:auto;
+	left:0;
+	right:0;
+	font-size:15px;
+	width:100%;
+	text-align:center;
+}
+#padIntro{
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
 	-webkit-animation-duration: 1.5s;
 	-moz-animation-duration: 1.5s;
 	-o-animation-duration: 1.5s;
+	position:absolute;
+	margin-left:auto;
+	margin-right:auto;
+	left:0;
+	right:0;
+	top:30%;
+	font-size:25px;
+	letter-spacing:4px;
+	width:70%;
+	text-align:center;
+}
+#padFooter{
+	position:absolute;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	text-align:center;
+	left:0;
+	right:0;
+	font-size:15px;
+	bottom:30px;
+}
+#mePhoto{
+	-webkit-animation-duration: 2.5s;
+	-moz-animation-duration: 2.5s;
+	-o-animation-duration: 2.5s;
 	width:10%;
 	position:absolute;
 	margin-left:auto;
@@ -64,5 +121,11 @@ body {
 #mePhoto{
 	width:30%;
 }
-
+#padFooter{
+	font-size:8px;
+}
+#padIntro{
+	font-size:15px;
+	width:100%;
+}
 }
