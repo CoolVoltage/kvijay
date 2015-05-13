@@ -51,6 +51,7 @@ body {
 	width:100%;
 	padding:0;
 	margin:0;
+	overflow-x:hidden;
 	color:white;
 //	font-family: ‘Courier New’, Courier, monospace;
 	letter-spacing:2px;
@@ -65,6 +66,39 @@ body {
 	left:0;
 	right:0;
 	bottom:20px;
+}
+#skillSet{
+	-webkit-animation-duration: 1.5s;
+	-moz-animation-duration: 1.5s;
+	-o-animation-duration: 1.5s;
+	position:absolute;
+	left:30px;
+	top:20%;
+	opacity:0;
+	width:600px;
+}
+#skillSetIntro{
+	position:absolute;
+	margin-left:auto;
+	margin-right:auto;
+	left:0;
+	right:0;
+}
+#liftoffIntro{
+	-webkit-animation-duration: 1.5s;
+	-moz-animation-duration: 1.5s;
+	-o-animation-duration: 1.5s;
+	position:absolute;
+	margin-left:auto;
+	margin-right:auto;
+	left:0;
+	right:0;
+	opacity:0;
+	top:30px;
+	font-size:20px;
+	letter-spacing:4px;
+	width:70%;
+	text-align:center;
 }
 #wildIntro{
 	position:absolute;
@@ -89,7 +123,7 @@ body {
 	left:0;
 	right:0;
 	top:30%;
-	font-size:25px;
+	font-size:20px;
 	letter-spacing:4px;
 	width:70%;
 	text-align:center;
@@ -128,4 +162,40 @@ body {
 	font-size:15px;
 	width:100%;
 }
+#liftoffIntro{
+	font-size:15px;
+	width:100%;
+}
+#skillSet{
+	width:300px;
+
+}
+#skillSetIntro{
+	font-size:15px;
+}
+#skillChart{
+	width:300px;
+	height:300px;
+}
+}
+.typed-cursor{
+	  opacity: 1;
+	 -webkit-animation: blink 0.7s infinite;
+	 -moz-animation: blink 0.7s infinite;
+animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
 }
