@@ -5,18 +5,25 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 	<meta charset="UTF-8">
 	<title>Karthik Vijay</title>
-	<link rel="stylesheet" type="text/css" href="custom.css">
-	<link rel="stylesheet" type="text/css" href="animate.css">
-	<script src="jquery-2.1.4.min.js"></script>
-	<script src="typed.min.js"></script>
-	<script src="Chart.min.js"></script>
-	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="StyleSheets/custom.css">
+	<link rel="stylesheet" type="text/css" href="StyleSheets/animate.css">
+	<script src="JavaScript/jquery-2.1.4.min.js"></script>
+	<script src="JavaScript/typed.min.js"></script>
+	<script src="JavaScript/Chart.min.js"></script>
+	<script src="JavaScript/script.js"></script>
 </head>
 <body>
 
 	<div id="inOrbit" class="segments">
+		<div id="inOrbitIntro">
+			Ways to get in touch with me!
+		</div>
 	</div>
 	<div id="losingEngines" class="segments">
+		<div id="losingEnginesIntro">
+			I have evolved since my <br> 
+			'Hello World!' in C
+		</div>
 	</div>
 	<div id="liftoff" class="segments">
 		<div id="liftoffIntro">
@@ -24,26 +31,35 @@
 		It has been a really exciting journey for me with programming...
 		</div>
 		<div id="skillSet">
-			<center><span id="skillSetIntro"><b>Addiction Chart</b></span></center>
-			<canvas id="skillChart" width="600px" height="600px"></canvas>
+			<center><span id="skillSetIntro"><b>Tools of my trade</b></span></center>
+			<center>
+				<div id="skillUl">
+					<li class="skillLi">JavaScript+Node</li>
+					<li class="skillLi">Html5 & Css3</li>
+					<li class="skillLi">MongoDB</li>
+					<li class="skillLi">C/C++</li>
+					<li class="skillLi">Java</li>
+					<li class="skillLi">Sql</li>
+					<li class="skillLi">Git</li>
+				</div>
+			</center>
 		</div>
 	</div>
 	<div id="pad" class="segments">
-		<span id="wildIntro" class="animated fadeInUp">A wild Karthik appeared!</span>
 		<br>
-		<img class="animated flipOnY" id="mePhoto" src="me.png"/>
+		<img class="animated flipOnY" id="mePhoto" src="Pictures/me.png"/>
 		<div id="padIntro" class="animated fadeInDown">
 		Hi! I am <em>Karthik Vijay</em>
 		<br>
 		Are you sure that you ain't lost? 
 		<br><br>
-		I am a <span id="typedSpan"></span><!--<span class="typed-cursor">|</span>-->
+		I am a <span id="typedSpan"></span>
 		<br><br>
 		</div>
 		<span id="padFooter">
 		If you're a geek like me, call 'automate' function in your console. If not, scroll up the good ol' way!
 		</span>
-		<img id="padFooterImg" src="uparrow.png" class="animated bounce infinite"/>
+		<img id="padFooterImg" src="Pictures/uparrow.png" class="animated bounce infinite"/>
 	</div>
 </body>
 </html>

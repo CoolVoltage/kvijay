@@ -37,36 +37,9 @@ $(function(){
 			},100);				
 	});
 	alignments();
-	var ctx = $("#skillChart").get(0).getContext("2d");
-	var data = {
-		labels: ["HTML/CSS",  "C/C++","Javascript+Node", "SQL", "MongoDB", "PHP", "Android"],
-			datasets: [
-			
-			{
-	label: "My dataset",
-       fillColor: "rgba(151,187,205,0.2)",
-       strokeColor: "rgba(151,187,205,1)",
-       pointColor: "rgba(151,187,205,1)",
-       pointStrokeColor: "#fff",
-       pointHighlightFill: "#fff",
-       pointHighlightStroke: "rgba(151,187,205,1)",
-       data: [75, 30,70, 40, 60,50, 45]
-			}
-			]	
-	};
-	//var mq = window.matchMedia('(max-width: 800px)');
-	var pointSize = 20;
-	if(mq.matches){
-		pointSize = 10;
-	    }
-	var myNewChart = new Chart(ctx).Radar(data,{
-		pointLabelFontSize : pointSize,
-		angleLineColor:"rgba(100,100,100,1)",
-		pointLabelFontColor:"#ffffff"
-		});
 });
 function alignments(){
-	$("#skillSet").css({"top":$("#liftoffIntro").height()+50+"px"});	
+//	$("#skillSet").css({"top":$("#liftoffIntro").height()+50+"px"});	
 }
 function smoothScroll(){
 	jQuery.extend(jQuery.easing, {
@@ -79,11 +52,36 @@ var wheel = false,
     $docH = $(document).height() - $(window).height(),
     $scrollTop = $(window).scrollTop();
 
+var liftOffCreated=false;
+
 $(window).bind('scroll', function() {
-		console.log($('body').scrollTop()+":"+ $('#liftoff').offset().top);
 		if($('body').scrollTop() <= $('#liftoff').offset().top+30){
 			$("#liftoffIntro").addClass("animated fadeInDown");
 			$("#skillSet").addClass("animated fadeInUp");
+			if(!liftOffCreated){
+			$(".skillLi").css("opacity",0);
+			setTimeout(function(){
+					var skillLiIndex = 0;
+					var animateLi = setInterval(function(){
+							var li = $(".skillLi")[skillLiIndex];
+							$(li).addClass("animated fadeInDown");	
+							skillLiIndex++;
+							//console.log(skillLiIndex);
+							if(skillLiIndex == $(".skillLi").length){
+							window.clearInterval(animateLi);
+							}
+							},1000);
+					},500);
+			}
+			liftOffCreated = true;
+		}
+		if($('body').scrollTop() <= $('#losingEngines').offset().top+30){
+			$("#losingEnginesIntro").addClass("animated fadeInDown");
+			//$("#skillSet").addClass("animated fadeInUp");
+		}
+		if($('body').scrollTop() <= $('#inOrbit').offset().top+30){
+			$("#inOrbitIntro").addClass("animated fadeInDown");
+			//$("#skillSet").addClass("animated fadeInUp");
 		}
 		if (wheel === false) {
 		$scrollTop = $(this).scrollTop();
