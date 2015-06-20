@@ -70,8 +70,8 @@ $(window).bind('scroll', function() {
 							if(skillLiIndex == $(".skillLi").length){
 							window.clearInterval(animateLi);
 							}
-							},1000);
-					},500);
+							},500);
+					},200);
 			}
 			liftOffCreated = true;
 		}

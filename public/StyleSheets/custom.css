@@ -155,7 +155,63 @@ body {
 	right:0;
 
 }
+#projectSet{
+	position:absolute;
+	top:20%;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	width:90%;
+}
+.projectDiv{
+	padding:10px;
+	background-color:black;
+	display:inline-block;
+	opacity:0.6;
+	border: 1px solid black;
+	margin:5px;
+	border-radius:15px;
+}
+.projectDiv:hover{
+	margin:10px;	
+	opacity:0.8;
+}
+#projectLeft{
+	position:absolute;
+	width:45%;
+	left:2%;
+}
+#projectRight{
+	position:absolute;
+	right:2%;
+	width:45%
+}
+.projectDiv a{
+	font-size:20px;
+	color:white;
+	font-family:'Open Sans',Arial,Helvetica Neue,sans-serif;
+}
+p{
+	text-indent : 100px;	
+}
 @media (max-width:800px){
+#projectSet{
+	top:10%;	
+	width:100%;
+}
+.projectDiv{
+	padding:5px;	
+}
+.projectDiv a{
+	font-size:12px;	
+}
+#projectSet{
+	font-size:10px;	
+}
+p{
+	text-indent:10px;	
+}
 #mePhoto{
 	width:30%;
 }
@@ -171,16 +227,15 @@ body {
 	width:100%;
 }
 #skillSet{
-	top:25%;
+	top:20%;
 	left:0;
 	width:100%;
 }
 #skillSetIntro{
-	font-size:12px;
+	font-size:15px;
 }
 #skillUl{
-	font-size:11px;
-	text-align:left;
+	font-size:14px;
 }
 }
 .typed-cursor{
